@@ -1,3 +1,12 @@
+
+![Logo](https://www.paulthetall.com/wp-content/uploads/2017/04/arma-3-banner.jpg)
+
+
+## Authors
+Originally developed by
+- [@cloftus96](https://github.com/cloftus96)
+Modified By
+- [@ttsiapras](https://github.com/ttsiapras)
 # Using Arma 3 to Generate Synthetic Data
 
 This README details how python and Arma 3 script(s) are used to
