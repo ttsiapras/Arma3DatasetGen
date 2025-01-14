@@ -62,22 +62,22 @@ def main():
     time.sleep(1)
     pyautogui.press('enter')
 
-    time.sleep(15)
+    # time.sleep(15)
 
-    # maximize the launcher
-    pyautogui.keyDown('alt')
-    pyautogui.press('space')
-    pyautogui.keyUp('alt')
-    time.sleep(.5)
-    pyautogui.press('down')
-    time.sleep(.5)
-    pyautogui.press('down')
-    time.sleep(.5)
-    pyautogui.press('down')
-    time.sleep(.5)
-    pyautogui.press('down')
-    time.sleep(1)
-    pyautogui.press('enter')
+    # # maximize the launcher
+    # pyautogui.keyDown('alt')
+    # pyautogui.press('space')
+    # pyautogui.keyUp('alt')
+    # time.sleep(.5)
+    # pyautogui.press('down')
+    # time.sleep(.5)
+    # pyautogui.press('down')
+    # time.sleep(.5)
+    # pyautogui.press('down')
+    # time.sleep(.5)
+    # pyautogui.press('down')
+    # time.sleep(1)
+    # pyautogui.press('enter')
 
     # open the game and sleep to wait for the game to open
     # before running, change this path to the Arma3_64.exe file on your own computer
@@ -167,7 +167,9 @@ def main():
 
     # 1920x1080
     elif userWidth == 1920:
-
+        print("Go to the lancher Window")
+        time.sleep(3)
+        print("Srarting...")
         # this will run the game from the launcher
         pyautogui.moveTo(136, 981)
         time.sleep(1)
@@ -241,6 +243,75 @@ def main():
     # by this script
     # i.e. the coordinates have not been found for each click for that specific resolution
     else:
+        slow = 0.5
+        wait2Press = 0.5
+
+        time.sleep(5)
+        # this will run the game from the launcher
+        pyautogui.moveTo(100, 1050, duration=slow)
+        time.sleep(wait2Press)
+        pyautogui.click(button='left')
+
+        # wait for game to open
+        time.sleep(25)
+        # this click will open the editor map select screen
+        pyautogui.moveTo(1302, 598, duration=slow)
+        time.sleep(wait2Press)
+        pyautogui.click(button='left')
+
+        time.sleep(3)
+
+        # this clicks on the map "Stratis"
+        pyautogui.moveTo(600, 360, duration=slow)
+        time.sleep(wait2Press)
+        pyautogui.click(button='left')
+
+        time.sleep(1)
+
+        # this clicks on the confirm button to load Stratis
+        pyautogui.moveTo(1325, 900, duration=slow)
+        time.sleep(wait2Press)
+        pyautogui.click(button='left')
+
+        time.sleep(5)
+
+        # this click opens the scenario menu bar option
+        pyautogui.moveTo(45, 45, duration=slow)
+        time.sleep(wait2Press)
+        pyautogui.click(button='left')
+
+        time.sleep(1)
+
+        # this click hits open (to open the mission open window)
+        pyautogui.moveTo(50, 120, duration=slow)
+        time.sleep(wait2Press)
+        pyautogui.click(button='left')
+
+        time.sleep(1)
+
+
+        # this click physically opens the mission
+        # pyautogui.moveTo(1410, 1060,duration=slow) # cancel button
+        # time.sleep(wait2Press)
+        # pyautogui.click(button='left')
+        input("Enter to continue")
+
+        time.sleep(1)
+
+        # this click opens the play menu bar option
+        pyautogui.moveTo(520, 40,duration=slow)
+        time.sleep(wait2Press)
+        pyautogui.click(button='left')
+
+        time.sleep(1)
+
+        # this click runs the mission in single player
+        pyautogui.moveTo(520, 80, duration=slow)
+        time.sleep(wait2Press)
+        pyautogui.click(button='left')
+
+        time.sleep(5)
+
         print('ERROR:')
         print('Your resolution is currently unsupported by this script. Please re-run the script using')
         print('one of the supported resolutions. These can be found in the README of the project.')
