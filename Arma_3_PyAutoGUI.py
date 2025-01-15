@@ -62,7 +62,7 @@ def main():
     time.sleep(1)
     pyautogui.press('enter')
 
-    # time.sleep(15)
+    time.sleep(15)
 
     # # maximize the launcher
     # pyautogui.keyDown('alt')
@@ -246,14 +246,13 @@ def main():
         slow = 0.5
         wait2Press = 0.5
 
-        time.sleep(5)
         # this will run the game from the launcher
         pyautogui.moveTo(100, 1050, duration=slow)
         time.sleep(wait2Press)
         pyautogui.click(button='left')
 
         # wait for game to open
-        time.sleep(25)
+        time.sleep(30)
         # this click will open the editor map select screen
         pyautogui.moveTo(1302, 598, duration=slow)
         time.sleep(wait2Press)
@@ -294,9 +293,9 @@ def main():
         # pyautogui.moveTo(1410, 1060,duration=slow) # cancel button
         # time.sleep(wait2Press)
         # pyautogui.click(button='left')
-        input("Enter to continue")
-
-        time.sleep(1)
+        input("Select Scenario and then press <Enter> to continue")
+        time.sleep(5)
+        print("Click on the Eden Editor window")
 
         # this click opens the play menu bar option
         pyautogui.moveTo(520, 40,duration=slow)

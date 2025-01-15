@@ -79,7 +79,7 @@ def image_file_mover(check_delay, config_params, cam_pos_list):
     cam_pos_ct = 0
 
     screenshot_path = Path(os.path.expanduser('~\\Documents\\Arma 3\\Screenshots'))
-    dest_dir = Path(os.path.expanduser('~\\Documents\\SyntheticDataGen'))
+    dest_dir = Path(os.path.expanduser('D:\\synthetic_dataset\\arma\\SyntheticDataGen'))
     if not Path.exists(dest_dir):
         os.makedirs(str(dest_dir), 0o777)  # create the directory if it doesnt exist
     # if not screenshot_path.exists(): # I will fix this later
