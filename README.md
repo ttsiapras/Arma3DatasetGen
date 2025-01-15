@@ -4,7 +4,9 @@
 
 ## Authors
 Originally developed by
+
 - [@cloftus96](https://github.com/cloftus96)
+  
 Modified By
 - [@ttsiapras](https://github.com/ttsiapras)
 # Using Arma 3 to Generate Synthetic Data
